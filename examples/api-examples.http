@@ -1,0 +1,26 @@
+### Health Check
+GET http://localhost:3000/api/health
+
+### API Documentation  
+GET http://localhost:3000/api/v1/docs
+
+### Get Trial Balance
+GET http://localhost:3000/api/v1/general-ledger/trial-balance?entityId=DEMO-CORP-001&endDate=2024-12-31
+
+### Get Chart of Accounts
+GET http://localhost:3000/api/v1/general-ledger/chart-of-accounts?entityId=DEMO-CORP-001&level=1
+
+### Get GL Detail
+GET http://localhost:3000/api/v1/general-ledger/detail?entityId=DEMO-CORP-001&startDate=2024-01-01&endDate=2024-12-31&limit=10
+
+### Get Accounts Receivable
+GET http://localhost:3000/api/v1/subledgers/accounts-receivable?entityId=DEMO-CORP-001
+
+### Get Accounts Payable
+GET http://localhost:3000/api/v1/subledgers/accounts-payable?entityId=DEMO-CORP-001
+
+### Get Inventory Master
+GET http://localhost:3000/api/v1/inventory/master?entityId=DEMO-CORP-001
+
+### Get Payroll Detail
+GET http://localhost:3000/api/v1/payroll/detail?entityId=DEMO-CORP-001&startDate=2024-12-01&endDate=2024-12-31

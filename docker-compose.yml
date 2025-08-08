@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  aicpa-api:
+    build: 
+      context: ./api-server
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DEFAULT_ENTITY_ID=DEMO-CORP-001
+    volumes:
+      - ./api-server:/app
+      - /app/node_modules
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  aicpa-mcp:
+    build:
+      context: ./mcp-server  
+      dockerfile: Dockerfile
+    environment:
+      - AICPA_API_URL=http://aicpa-api:3000/api/v1
+      - DEFAULT_ENTITY_ID=DEMO-CORP-001
+      - MCP_LOG_LEVEL=info
+    depends_on:
+      - aicpa-api
+    volumes:
+      - ./mcp-server:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+networks:
+  default:
+    name: aicpa-network
