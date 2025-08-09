@@ -20,7 +20,7 @@ A comprehensive implementation of the AICPA Audit Data Standards (2012-2015) wit
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR-USERNAME/aicpa-audit-data-api.git
+   git clone https://github.com/GenAICPA/aicpa-audit-data-api.git
    cd aicpa-audit-data-api
    ```
 
@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- Create an [Issue](https://github.com/YOUR-USERNAME/aicpa-audit-data-api/issues)
+- Create an [Issue](https://github.com/GenAICPA/aicpa-audit-data-api/issues)
 - Read the [Documentation](docs/)
 - Check [Examples](examples/)
 
