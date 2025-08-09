@@ -1,0 +1,24 @@
+name: "Feature request"
+description: "Propose an enhancement to ADS API/MCP servers"
+labels: ["type:enhancement", "needs:discussion"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: "What user need or scenario is this addressing?"
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: "API shape / MCP tool signature / data structures"
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Areas in scope
+      options:
+        - label: api-server
+        - label: mcp-server
+        - label: docs
+        - label: examples
+        - label: docker

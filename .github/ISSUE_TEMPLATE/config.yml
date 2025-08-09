@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Q&A / Design Discussion
+    url: https://github.com/GenAICPA/aicpa-audit-data-api/discussions
+    about: "Ask questions and discuss design before opening issues"

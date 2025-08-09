@@ -1,0 +1,38 @@
+name: "Bug report"
+description: "Report a problem with the ADS API or MCP server"
+labels: ["type:bug", "needs:triage"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - api-server
+        - mcp-server
+        - docs
+        - examples
+        - docker
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: "Exact steps and inputs. Include sample payloads if possible."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+  - type: input
+    id: version
+    attributes:
+      label: Version/commit
+      placeholder: "Tag or commit SHA"
