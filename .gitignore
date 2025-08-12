@@ -46,6 +46,9 @@ pids
 # Yarn Integrity file
 .yarn-integrity
 
+# dotenv environment variables file
+.env
+
 # IDE files
 .vscode/
 .idea/

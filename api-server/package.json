@@ -41,10 +41,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-USERNAME/aicpa-audit-data-api.git"
+    "url": "https://github.com/GenAICPA/aicpa-audit-data-api.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR-USERNAME/aicpa-audit-data-api/issues"
+    "url": "https://github.com/GenAICPA/aicpa-audit-data-api/issues"
   },
-  "homepage": "https://github.com/YOUR-USERNAME/aicpa-audit-data-api#readme"
+  "homepage": "https://github.com/GenAICPA/aicpa-audit-data-api#readme"
 }
